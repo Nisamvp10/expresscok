@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin
+
+SITEMAP: http://www.expresscok.com/sitemap.xml

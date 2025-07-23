@@ -1,0 +1,62 @@
+<?= '<?xml version="1.0" encoding="UTF-8" ?>' ?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+<url>
+  <loc>http://www.expresscok.com/</loc>
+  <lastmod>2018-06-09T07:01:04+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.expresscok.com/about</loc>
+  <lastmod>2018-06-09T07:01:04+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.expresscok.com/international</loc>
+  <lastmod>2018-06-09T07:01:04+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.expresscok.com/parcel</loc>
+  <lastmod>2018-06-09T07:01:04+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.expresscok.com/food</loc>
+  <lastmod>2018-06-09T07:01:04+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.expresscok.com/cargo</loc>
+  <lastmod>2018-06-09T07:01:04+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.expresscok.com/baggage</loc>
+  <lastmod>2018-06-09T07:01:04+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.expresscok.com/medicine</loc>
+  <lastmod>2018-06-09T07:01:04+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.expresscok.com/warehousing</loc>
+  <lastmod>2018-06-09T07:01:04+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.expresscok.com/airsea</loc>
+  <lastmod>2018-06-09T07:01:04+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.expresscok.com/tracking</loc>
+  <lastmod>2018-06-09T07:01:04+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.expresscok.com/tools</loc>
+  <lastmod>2018-06-09T07:01:04+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.expresscok.com/documents</loc>
+  <lastmod>2018-06-09T07:01:04+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.expresscok.com/contact</loc>
+  <lastmod>2018-06-09T07:01:04+00:00</lastmod>
+</url>
+</urlset>

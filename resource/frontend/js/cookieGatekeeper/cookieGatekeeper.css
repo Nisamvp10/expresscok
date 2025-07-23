@@ -1,0 +1,120 @@
+/**
+ * Cookie Consent solution to comply with EU law
+ * 
+ * @title           Cookie Gatekeeper
+ * @description     handle acceptance levels of cookie usage
+ * 
+ * @author          Heimann, Wöltge&Friends GmbH
+ * @version         2014.11
+
+ * ---
+ * Inspired by CookieCuttr script from Chris Wharton (http://cookiecuttr.com)
+ */
+
+/* notification wrapper (top/bottom position) */
+.dhl-cgk {
+    background-color: #c00;
+    background-image: -webkit-linear-gradient(top, #cc0000 0% , #b70000 100%);
+    background-image: -moz-linear-gradient(top, #cc0000 0% , #b70000 100%);
+    background-image: -ms-linear-gradient(top, #cc0000 0% , #b70000 100%);
+    background-image: -o-linear-gradient(top, #cc0000 0% , #b70000 100%);
+    background-image: linear-gradient(top, #cc0000 0% , #b70000 100%);
+    background-repeat: repeat-x;
+    box-shadow: 1px 1px 5px #666;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0 0 .5em;
+    padding: 0.75em 20px 0.5em;
+    position: fixed;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.35);
+    top: 0;
+    width: 940px;
+    z-index: 99999;
+}
+.dhl-cgk.dhl-cgk-type-bottom {
+    bottom: 0;
+    box-shadow: -1px 1px 5px #666;
+    margin: .5em 0 0;
+    top: auto;
+}
+.dhl-cgk.dhl-cgk-type-reset {
+    background-color: #f2f2ed;
+    background-image: none;
+    color: #000;
+    text-shadow: none;
+}
+
+/* links: e.g. policy page, info page link */
+.dhl-cgk a {
+    color: #fff;
+    text-decoration: underline;
+    text-shadow: none;
+}
+.dhl-cgk a:hover {
+    color: #fc0;
+}
+/* accept, decline, reset buttons */
+.dhl-cgk .dhl-cgk-buttons {
+    padding: 0.25em 0;
+}
+.dhl-cgk .dhl-cgk-buttons a {
+    display: inline-block;
+}
+.dhl-cgk a.dhl-cgk-button {
+    box-shadow: 0 0 2px rgba(0,0,0,0.25);
+    color: #c00;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0.5em;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+.dhl-cgk a.dhl-cgk-button:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.95);
+    color: #000;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+.dhl-cgk a.dhl-cgk-accept {
+    background-color: #fc0;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+.dhl-cgk a.dhl-cgk-decline {
+    background-color: #fff;
+}
+.dhl-cgk a.dhl-cgk-reset {
+    background-color: #fff;
+}
+/* policy page link inside button section */
+.dhl-cgk .dhl-cgk-buttons a.dhl-cgk-info,
+.dhl-cgk .dhl-cgk-buttons a.dhl-cgk-policy {
+    margin-left: 1em;
+}
+.dhl-cgk .dhl-cgk-buttons a.dhl-cgk-policy.dhl-cgk-button {
+    background-color: #fc0;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+
+@media screen and (max-width: 768px) {
+   .dhl-cgk {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+   .dhl-cgk a.dhl-cgk-button {
+       display: block;
+    }
+}

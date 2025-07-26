@@ -185,6 +185,9 @@
                     <!--li class="<?php echo (isset($active)&&$active=="order")?"active":"";  ?>">
                         <a href="<?php echo base_url();?>admin/order"><i class="fa fa-fw fa-dashboard"></i> Order Details</a>
                     </li-->
+                    <li class="<?php echo (isset($active)&&$active=="order")?"active":"";  ?>">
+                        <a href="<?php echo base_url();?>admin/tracking-flow"><i class="fa fa-fw fa-truck"></i> Tracking Flow</a>
+                    </li>
                     <li class="<?php echo (isset($active)&&$active=="settings")?"active":"";  ?>">
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-wrench"></i> Settings <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo2" class="ul-left-align <?php echo (isset($actived)&&($actived=="users"||$actived=="profile"))?"":"collapse";  ?>">

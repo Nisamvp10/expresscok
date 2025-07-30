@@ -74,7 +74,7 @@
 								<div class="col-sm-6">
 									<div class="form-group">
 										<label>Full Name *</label>
-										<input  type="text" class="form-control rounded"  name="cust_name" placeholder="Enter Customer Name">
+										<input  type="text" class="form-control rounded"  name="sender" placeholder="Enter Customer Name">
 									</div>
 								</div>
 								<div class="col-sm-6">
@@ -96,7 +96,7 @@
 								<div class="col-sm-6">
 									<div class="form-group">
 										<label>Address </label>
-										<input  type="text" class="form-control rounded"  name="address" placeholder="Enter Address">
+										<input  type="text" class="form-control rounded"  name="address_sender" placeholder="Enter Address">
 									</div>
 								</div>
 							</div>
@@ -119,24 +119,8 @@
 									</div>
 							</div>
 
-									<div class="row">
-			                			    <div class="col-lg-6">
-												<div class="form-group">
-													<label>Sender name</label>
-													<input  class="form-control"  name="sender">
-													
-												</div>
-											</div>
-						                    <div class="col-lg-6">
-												<div class="form-group">
-													<label>Sender Address</label>
-													<input  class="form-control"  name="address_sender">
-													
-												</div>
-											</div>
-										   
-						            </div>
-									<div class="row">
+								
+									<div class="row d-none">
 			                			    <div class="col-lg-6">
 												<div class="form-group">
 													<label>Receiver name</label>

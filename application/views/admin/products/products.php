@@ -67,6 +67,58 @@
 											</div>
 										  
 						            </div>
+							<div class="row">
+								<div class="col-sm-12">
+									<label>Customer Information</label>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label>Full Name *</label>
+										<input  type="text" class="form-control rounded"  name="cust_name" placeholder="Enter Customer Name">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label>Email </label>
+										<input  type="text" class="form-control rounded"  name="email" placeholder="Enter Customer Email">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label>Phone </label>
+										<input  type="text" class="form-control rounded"  name="phone" placeholder="Enter Phone Number">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label>Address </label>
+										<input  type="text" class="form-control rounded"  name="address" placeholder="Enter Address">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-12">
+									<label>Product Information</label>
+								</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label>Description </label>
+											<textarea class="form-control rounded" name="productdescription" rows="3" cols="5" placeholder="Product Description"></textarea>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label>Estimated Date </label>
+											<input  type="Date" class="form-control rounded"  name="estimatedDate" placeholder="">
+										</div>
+									</div>
+							</div>
+
 									<div class="row">
 			                			    <div class="col-lg-6">
 												<div class="form-group">

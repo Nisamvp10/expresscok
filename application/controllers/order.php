@@ -37,11 +37,10 @@ function __construct() {
         }else{
              $data['result']  = '';
         }
-        $data['id'] = $id;
         
 		$data['active']="tracking";
         $this->load->view('includes/header',$data);
-		$this->load->view('order',$data);
+		$this->load->view('tracking',$data);
 		$this->load->view('includes/footer');
 	}
 }

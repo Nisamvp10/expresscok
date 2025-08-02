@@ -1,9 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Admin_index extends CI_Controller {
+class Admin_index extends CI_Controller 
+{
     var $user_info=array();
 	var $file_size_g=1024;
-	public function __construct(){
+	public function __construct()
+	{
 		parent::__construct();
 		$this->load->library('form_validation');
 		$this->load->model('admin/dashboard_model');

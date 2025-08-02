@@ -1,0 +1,52 @@
+<?php
+namespace App\Models;
+
+use CodeIgniter\Model;
+use App\Models\AppointmentModel;
+
+class ReportsModel extends Model{
+    function getReports($searchInput=NULL,$branch,$fromdate=null,$todate=null) {
+
+        $userRole = session('user_data')['role'];
+
+        $builder = $this->db->table('appointments a') 
+            ->select('a.price,a.booking_status, a.booking_date, a.duration, a.note,c.name ,s.name as staff_name,branch_name')
+            ->select('GROUP_CONCAT(sr.name ORDER BY sr.name SEPARATOR ", ") as specialties')
+            ->join('clients as c', 'a.client_id = c.id')
+            ->join('users as s', 'a.staff_id = s.id')
+            ->join('booked_specialties as bs','a.id= bs.booking_id')
+            ->join('services as sr','bs.specialties_id= sr.id')
+            ->join('branches as b','s.store_id= b.id')
+            ->groupBy('a.id');
+        
+        if($searchInput){
+          $builder->groupStart()
+                    //->like('c.name', $searchInput)
+                    ->Like('s.name', $searchInput)
+                    ->groupEnd();
+        }
+        if($branch){
+            $builder->where('b.id',$branch);
+        }
+        if($fromdate){
+             $builder->where('a.booking_date >=',$fromdate);
+        }
+        if($todate){
+             $builder->where('a.booking_date <=',$todate);
+        }
+
+        if ($userRole != 1) {
+            $storeId = getStore();
+            if ($userRole == 2) {
+                $builder->where('b.id', $storeId);
+            }elseif ($userRole == 5) {
+                $builder->where('s.id', session('user_data')['id']);
+            }
+        }
+        // if($today) {
+        //     $builder->where('DATE(booking_date)', date('Y-m-d'));
+        // }
+        $query = $builder->get()->getResultArray();
+        return $query;
+    }
+}
